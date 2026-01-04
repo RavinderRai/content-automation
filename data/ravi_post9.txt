@@ -1,0 +1,21 @@
+LLMs won’t replace traditional ML — they’ll just make it easier to build.
+
+Too many people see LLMs as the product.
+
+But some of the most powerful use cases have them behind the scenes - quietly enhancing traditional ML workflows.
+
+Here’s how I’ve seen it work (and used it myself):
+
+🔹 Synthetic label generation
+Need a few thousand labeled examples? LLMs can kickstart the process when real labels are scarce - great for bootstrapping models.
+
+🔹 Feature extraction
+PDFs, screenshots, transcripts, web pages - LLMs are great at turning these into structured formats that plug right into ML pipelines.
+
+🔹 Data transformation
+Instead of regex hell, use LLMs to normalize categories, clean messy text fields, or even guess missing values with context.
+
+There’s a ton you can do when you stop thinking of LLMs as chatbots - and start using them as tools.
+
+Traditional ML isn’t dead.
+It’s just getting an upgrade.

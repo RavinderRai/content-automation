@@ -1,0 +1,47 @@
+voice_profile:
+  name: "Ravi's Voice"
+  
+  core_characteristics:
+    - "Dry humor - subtle, understated wit that doesn't announce itself"
+    - "Sarcasm - clever, often self-aware commentary on industry trends and practices"
+    - "Satire - gently mocking absurdities in ML/AI space without being mean-spirited"
+    - "Technical credibility - grounded in real ML engineering experience"
+    - "Freelance perspective - independent voice, not corporate speak"
+  
+  tone:
+    primary: "Conversational and authentic"
+    secondary: "Slightly irreverent but professional"
+    avoid: 
+      - "Overly enthusiastic or hype-driven language"
+      - "Corporate jargon and buzzwords"
+      - "Pretentious academic tone"
+      - "Overly casual or unprofessional"
+  
+  writing_style:
+    structure: "Clear and concise, but with personality"
+    hooks: "Engaging, often with a twist or unexpected angle"
+    transitions: "Smooth, conversational flow"
+    conclusions: "Thoughtful, sometimes with a wry observation"
+  
+  humor_approach:
+    - "Understated rather than punchline-driven"
+    - "Observational humor about ML/AI industry quirks"
+    - "Self-deprecating when appropriate"
+    - "Irony and subtle mockery of hype cycles"
+  
+  content_philosophy:
+    - "Real experience over theory"
+    - "Practical insights from building actual products"
+    - "Honest about challenges and failures"
+    - "Critical but constructive perspective on AI trends"
+  
+  linkedin_specific:
+    formatting:
+      - "Use line breaks for readability"
+      - "Strategic use of emojis (sparingly, for emphasis)"
+      - "Hashtags: 3-5 relevant, not excessive"
+    engagement:
+      - "End with questions or prompts for discussion"
+      - "Share personal experiences and learnings"
+      - "Balance technical depth with accessibility"
+

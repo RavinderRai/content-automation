@@ -1,0 +1,9 @@
+If I could go back in my data science journey, something I'd do differently is specialize in a cloud tool earlier.
+
+Now I chose AWS, and if you’re considering the same, a few of the most important tools here are:
+
+- AWS Glue for ETL jobs.
+- AWS S3 for storage.
+- AWS SageMaker for model building.
+
+I actually did a blog post on a mini-project that uses all of these, check it out: https://ravinderrai[dot]com/predicting-gaming-behavior-with-aws/

@@ -1,0 +1,11 @@
+Got a new Data or AI Idea but on a budget?
+
+No worries, here's 3 places to grab free(ish) datasets and actually test your MVP:
+
+🔍 Google Dataset Search – The Google of data (literally). Filter for “free” and pretend you didn’t just steal it.
+🏛️ Data[dot]gov – Satellite pics, economic stats…all yours, no invoice.
+🗞️ Data Is Plural – A weekly newsletter of weird, random datasets. Perfect for that niche feature nobody asked for.
+
+Give ’em a spin and see if your prototype holds up.
+
+Where do you dumpster-dive for free data?

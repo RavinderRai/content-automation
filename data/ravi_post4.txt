@@ -1,0 +1,17 @@
+This 1 mindset shift changed everything. 
+
+When I first started learning data science, I focused on:
+
+ - a fun problem to solve
+ - the latest Kaggle dataset
+ - trying all the coolest models
+ - thinking the best model is valuable
+
+But that mindset results in little impact. The real value comes from:
+
+ - a real-world problem to solve
+ - hunting for relevant and quality data yourself
+ - not worrying about the model too much, especially early on
+ - considering how your ML solution is actually tied to the revenue
+
+Thinking about the surrounding aspects of ML is how it actually becomes useful.

@@ -1,0 +1,15 @@
+If you think feature engineering is obsolete, you’re not looking close enough.
+
+A lot of people think LLMs killed it off.
+
+But in practice, feature engineering still shows up everywhere in real-world ML:
+
+🔹 Tabular data: XGBoost and LightGBM still thrive on carefully crafted features where transformations and domain knowledge can make or break results - this hasn’t changed.
+
+🔹 Embeddings as features: For text, images, and graphs - embeddings are the new feature engineering. Picking the right representation matters more than ever.
+
+🔹 Multimodal pipelines: Combining structured + unstructured data isn’t automatic. Designing how features interact across modalities is still feature engineering.
+
+The tools may look new.
+
+ But the mindset behind feature engineering remains.

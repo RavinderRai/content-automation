@@ -1,0 +1,12 @@
+Freelancing Lesson: Everyone wants AI, but nobody wants to deal with crappy data.
+
+I’ve seen this pattern repeat again and again:
+
+⚫ Unreliable Data Sourcing: Data is scattered, schemas are inconsistent, and nothing flows reliably. A model on top? Good luck.
+⚫ Labeling gaps: supervised learning is king - but nobody is prepared for the grind of labeling.
+⚫ Quality issues: Duplicates, nulls, silent errors… accuracy dies long before the model gets blamed.
+
+As they always say in ML.
+
+Garbage in.
+Garbage out.

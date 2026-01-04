@@ -1,0 +1,17 @@
+Complexity is a terrible starting point.
+
+Jumping straight to LLMs when the problem could be solved with something simpler, faster, and cheaper is never a good idea.
+
+Much better to start simple, then add complexity only if you need it.
+
+Take for example:
+
+🔹 Tabular prediction: Don’t start with GPT for forecasting or churn. XGBoost gets you 90% of the way there - and you can always revisit if they fall short.
+
+🔹 Simple classification: Don’t start with GPT for spam detection, sentiment, or categorization. Logistic regression or a small transformer usually does the trick.
+
+🔹 Heuristics & rules: Don’t start with GPT where a regex or SQL filter works. It gets you shipping fast, and you can layer in ML later if the use case matures.
+
+LLMs are powerful - but they should be step 3, not step 1.
+
+Complexity isn’t how you start. It’s what you earn.

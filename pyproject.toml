@@ -1,0 +1,11 @@
+[project]
+name = "content-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.14.0",
+    "streamlit>=1.52.2",
+    "pyyaml>=6.0",
+]

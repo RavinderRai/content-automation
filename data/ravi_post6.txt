@@ -1,0 +1,11 @@
+When I first started learning Data Science:
+
+- Coding was the focus of the work.
+- It felt like a blend of programming and math.
+- Neural Networks seemed like cool science fiction.
+
+But the deeper I got, the more I realized:
+
+- Data Science is dead.
+- Coding is a waste of time.
+- Machine Learning Engineering is where its at.

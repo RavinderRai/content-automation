@@ -1,0 +1,8 @@
+If you're models sucks, then revisit your data preprocessing steps.
+
+If that's fine, then revisit your data exploration steps.
+
+If that's fine, then revisit your data collection step. 
+
+
+Just work backwards until you finally realize you just suck at web scraping.

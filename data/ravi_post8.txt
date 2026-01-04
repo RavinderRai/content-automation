@@ -1,0 +1,27 @@
+Before you build a product, build fake data.
+
+Especially in the LLM era, where access to real, labeled data can be your biggest bottleneck.
+
+But here's the catch:
+
+Simply prompting an LLM to generate some examples isn't enough — and asking for it in a chat window definitely isn’t.
+
+It’s not about replacing real data — it’s about unblocking yourself before you have it.
+
+But if you go this route, you still need a repeatable, programmable pipeline — just like you would for real data.
+
+Here’s what I’ve learned:
+
+🔹 Structure it like a real pipeline
+ Write scripts or functions to generate samples. Control distributions. Add edge cases. Make it reproducible.
+🔹 Add variation and noise intentionally
+ Inject randomness, misspellings, and incomplete fields early. No two inputs should look exactly alike.
+🔹 Mimic real-world constraints
+ Time formats, currencies, multilingual data, corrupted inputs — all of this matters when your prototype hits production.
+🔹 Use it for both training and evaluation
+
+Synthetic data can act as a controlled benchmark. Don’t just train on it - use it to stress-test your system.
+
+Personally, I’ve used definitely used synthetic pipelines to test LLM workflows and train classification models before I had real labels.
+
+And every time, it helped me move faster — and build smarter.

@@ -1,0 +1,5 @@
+Being a Data Scientist is hard 
+Being a Data Engineer is hard 
+Choose your hard. 
+
+But after you choose, drop it and be a Machine Learning Engineer instead.

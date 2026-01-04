@@ -1,0 +1,21 @@
+𝗙𝗶𝗻𝗲-𝘁𝘂𝗻𝗶𝗻𝗴 𝗶𝘀 𝗹𝗶𝗸𝗲 𝗦𝗰𝗵𝗿ö𝗱𝗶𝗻𝗴𝗲𝗿’𝘀 𝗰𝗮𝘁. 
+
+Everyone says it’s dead… until the one time it suddenly isn’t.
+
+Look, most of the time, you won’t need fine-tuning:
+
+- Hallucinations won’t magically disappear.
+- Retrieval with prompting can cover knowledge gaps pretty well.
+- Monitoring plus feedback loops give you more leverage than model makeover.
+
+But sometimes there are cases where it is worth opening the box:
+
+- When you need a model to mimic a specific style/voice at scale.
+- When a smaller model must compress knowledge from a larger one.
+- When you want to inject genuinely new capabilities, not just rephrase answers.
+
+It’s not that it’s dead. 
+It’s just not usually the answer you’re looking for.
+
+The real skill isn’t knowing how to fine-tune.
+It’s knowing when to fine-tune.

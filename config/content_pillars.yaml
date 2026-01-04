@@ -1,0 +1,30 @@
+content_pillars:
+  monday:
+    name: "AI Strategy & Decision-Making"
+    description: "Focus on strategic thinking, decision-making frameworks, and high-level AI considerations"
+    
+  tuesday:
+    name: "Building Real AI Products"
+    description: "Showcase personal projects and apps. Shout out real-world AI implementations"
+    
+  wednesday:
+    name: "ML/AI Engineering"
+    description: "Technical deep-dives, engineering practices, and hands-on ML/AI development"
+    
+  thursday:
+    name: "AI Strategy & Decision-Making"
+    description: "Focus on strategic thinking, decision-making frameworks, and high-level AI considerations"
+    
+  friday:
+    name: "Freelance ML Career & Business of AI"
+    alternative: "Personal Journey & Mindset"
+    description: "Either focus on freelance ML career insights and the business side of AI, OR share personal journey and mindset content"
+    
+  saturday:
+    name: "Builder Notes / Experiments / Open Loops"
+    description: "Discuss unfinished or exploratory work, experiments, and open-ended projects"
+    
+  sunday:
+    name: "Reflection / Reset / Builder Mindset"
+    description: "Reflective content, resetting for the week, and builder mindset discussions"
+

@@ -1,0 +1,16 @@
+Most ML projects don’t fail because of the model - they fail because of everything around it.
+
+It’s easy to obsess over accuracy and benchmarks.
+But the real world has different failure modes.
+
+Here are the ones I’ve seen more often:
+
+🔹 Data pipelines breaking: great model, useless output - if your data flow isn’t reliable, the system is doomed from the start.
+
+🔹 Metrics that don’t match business goals: 95% accurate model doesn’t matter if it’s optimizing for the wrong thing. Alignment is everything.
+
+🔹 Lack of monitoring: without drift detection or alerts, small issues quietly turn into big problems.
+
+The model is just one piece of the puzzle.
+
+ It’s the ecosystem around it that decides whether it’s a demo… or a product.
