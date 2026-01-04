@@ -24,7 +24,7 @@ CONTENT PHILOSOPHY:
 - Critical but constructive perspective on AI trends
 
 TASK:
-Generate 5-7 content ideas for a LinkedIn post that:
+Generate exactly7 content ideas for a LinkedIn post that:
 1. Align with today's content pillar
 2. Would appeal to an audience of ML engineers, AI practitioners, and tech professionals
 3. Have potential for engaging hooks that match the voice profile (dry humor, sarcasm, or satirical angles when appropriate)

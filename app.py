@@ -5,13 +5,12 @@ LinkedIn Content Automation - Streamlit App
 import streamlit as st
 import os
 from datetime import datetime
-from pathlib import Path
-import sys
+from dotenv import load_dotenv
 
-# Add src to path
-sys.path.append(str(Path(__file__).parent / "src"))
+from src.idea_generator import IdeaGenerator
 
-from idea_generator import IdeaGenerator
+# Load environment variables from .env file
+load_dotenv()
 
 
 # Page config
@@ -29,11 +28,8 @@ if 'selected_idea' not in st.session_state:
 
 
 def get_api_key():
-    """Get OpenAI API key from environment or Streamlit secrets."""
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key and hasattr(st, "secrets") and "OPENAI_API_KEY" in st.secrets:
-        api_key = st.secrets["OPENAI_API_KEY"]
-    return api_key
+    """Get OpenAI API key from environment variables."""
+    return os.getenv("OPENAI_API_KEY")
 
 
 def main():
@@ -43,7 +39,7 @@ def main():
     # Get API key
     api_key = get_api_key()
     if not api_key:
-        st.error("⚠️ OPENAI_API_KEY not found. Please set it as an environment variable or in Streamlit secrets.")
+        st.error("⚠️ OPENAI_API_KEY not found. Please set it in a .env file or as an environment variable.")
         st.stop()
     
     # Initialize generator
