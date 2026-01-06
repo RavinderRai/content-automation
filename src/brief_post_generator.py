@@ -32,15 +32,24 @@ class BriefPostGenerator:
         with open(pillars_file, 'r') as f:
             return yaml.safe_load(f)
     
-    def _get_day_pillar(self) -> Dict[str, str]:
+    def _get_day_pillar(self, day_name: Optional[str] = None) -> Dict[str, str]:
         """
-        Get today's content pillar based on the day of the week.
+        Get content pillar for a specific day of the week.
+        
+        Args:
+            day_name: Day of the week (e.g., 'monday', 'tuesday'). 
+                     If None, uses today's date.
         
         Returns:
             Dict with 'name' and 'description' keys
         """
         pillars = self._load_content_pillars()
-        day_name = datetime.now().strftime("%A").lower()
+        
+        if day_name is None:
+            day_name = datetime.now().strftime("%A").lower()
+        else:
+            # Normalize day name to lowercase
+            day_name = day_name.lower()
         
         pillar_data = pillars['content_pillars'].get(day_name, {})
         
@@ -66,28 +75,38 @@ class BriefPostGenerator:
         
         return module.brief_post_generation_prompt
     
-    def generate_brief_posts(self, idea: Dict[str, str], num_versions: int = 5) -> List[str]:
+    def generate_brief_posts(self, idea: Dict[str, str], num_versions: int = 5, day_name: Optional[str] = None, context: Optional[str] = None) -> List[str]:
         """
         Generate brief versions of a LinkedIn post based on the selected idea.
         
         Args:
             idea: Dictionary with 'title', 'description', and optionally 'hook' keys
             num_versions: Number of brief versions to generate (default: 5)
+            day_name: Day of the week (e.g., 'monday', 'tuesday'). 
+                     If None, uses today's date.
+            context: Optional additional context relevant to today's content pillar
             
         Returns:
             List of brief post strings
         """
-        # Get today's pillar
-        pillar = self._get_day_pillar()
+        # Get pillar for the specified day
+        pillar = self._get_day_pillar(day_name)
         
         # Load prompt template
         prompt_template = self._load_prompt_template()
+        
+        # Format additional context section
+        if context and context.strip():
+            additional_context = f"ADDITIONAL CONTEXT:\n{context.strip()}\n"
+        else:
+            additional_context = ""
         
         # Format the prompt
         prompt = prompt_template.format(
             idea_title=idea.get('title', ''),
             pillar_name=pillar['name'],
-            pillar_description=pillar['description']
+            pillar_description=pillar['description'],
+            additional_context=additional_context
         )
         
         # Call OpenAI API

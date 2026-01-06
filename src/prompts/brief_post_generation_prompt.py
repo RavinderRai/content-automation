@@ -7,6 +7,9 @@ CONTENT PILLAR:
 Topic: {pillar_name}
 Description: {pillar_description}
 
+ADDITIONAL CONTEXT:
+{additional_context}
+
 TASK:
 Generate exactly 5 BRIEF versions of this LinkedIn post. Each version should be:
 - Short and concise (approximately 3-5 sentences or 100-200 words)

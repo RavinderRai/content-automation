@@ -47,15 +47,24 @@ class IdeaGenerator:
         
         return module.idea_generation_prompt
     
-    def _get_day_pillar(self) -> Dict[str, str]:
+    def _get_day_pillar(self, day_name: Optional[str] = None) -> Dict[str, str]:
         """
-        Get today's content pillar based on the day of the week.
+        Get content pillar for a specific day of the week.
+        
+        Args:
+            day_name: Day of the week (e.g., 'monday', 'tuesday'). 
+                     If None, uses today's date.
         
         Returns:
             Dict with 'name' and 'description' keys
         """
         pillars = self._load_content_pillars()
-        day_name = datetime.now().strftime("%A").lower()
+        
+        if day_name is None:
+            day_name = datetime.now().strftime("%A").lower()
+        else:
+            # Normalize day name to lowercase
+            day_name = day_name.lower()
         
         pillar_data = pillars['content_pillars'].get(day_name, {})
         
@@ -73,26 +82,36 @@ class IdeaGenerator:
             'description': pillar_data.get('description', '')
         }
     
-    def generate_ideas(self, num_ideas: int = 7) -> List[Dict[str, str]]:
+    def generate_ideas(self, num_ideas: int = 7, day_name: Optional[str] = None, context: Optional[str] = None) -> List[Dict[str, str]]:
         """
-        Generate content ideas for today's pillar.
+        Generate content ideas for a specific day's pillar.
         
         Args:
             num_ideas: Number of ideas to generate (default: 7)
+            day_name: Day of the week (e.g., 'monday', 'tuesday'). 
+                     If None, uses today's date.
+            context: Optional additional context relevant to today's content pillar
             
         Returns:
             List of idea dictionaries with 'title', 'description', and 'hook' keys
         """
-        # Get today's pillar
-        pillar = self._get_day_pillar()
+        # Get pillar for the specified day
+        pillar = self._get_day_pillar(day_name)
         
         # Load prompt template
         prompt_template = self._load_prompt_template()
         
+        # Format additional context section
+        if context and context.strip():
+            additional_context = f"ADDITIONAL CONTEXT:\n{context.strip()}\n"
+        else:
+            additional_context = ""
+        
         # Format the prompt
         prompt = prompt_template.format(
             pillar_name=pillar['name'],
-            pillar_description=pillar['description']
+            pillar_description=pillar['description'],
+            additional_context=additional_context
         )
         
         # Call OpenAI API
@@ -182,7 +201,7 @@ class IdeaGenerator:
             # Split by numbered items and create basic structure
             parts = ideas_text.split('\n\n')
             for i, part in enumerate(parts[:7], 1):
-                lines = [l.strip() for l in part.split('\n') if l.strip()]
+                lines = [line.strip() for line in part.split('\n') if line.strip()]
                 if lines:
                     ideas.append({
                         'title': lines[0] if lines else f"Idea {i}",
